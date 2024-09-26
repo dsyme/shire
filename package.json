@@ -1,5 +1,5 @@
 {
-  "name": "onlyfans-app",
+  "name": "shire-app",
   "version": "1.0.0",
   "description": "A content creation and sharing platform with subscription-based payments.",
   "main": "index.js",
@@ -10,9 +10,14 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@prisma/client": "^5.20.0",
+    "axios": "^1.7.7",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
+    "recharts": "^2.12.7",
     "stripe": "latest"
   },
   "devDependencies": {

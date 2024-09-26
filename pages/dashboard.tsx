@@ -20,7 +20,7 @@ const Dashboard = () => {
         </section>
         <section>
           <h2>Analytics</h2>
-          <Analytics />
+          {/* <Analytics /> */}
         </section>
       </main>
       <aside>

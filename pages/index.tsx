@@ -5,17 +5,17 @@ const HomePage = () => {
   return (
     <div>
       <header>
-        <h1>Welcome to OnlyFans</h1>
+        <h1>Welcome to shire</h1>
         <nav>
           <ul>
             <li>
               <Link href="/signup">
-                <a>Sign Up</a>
+                Sign Up
               </Link>
             </li>
             <li>
               <Link href="/login">
-                <a>Log In</a>
+                Log In
               </Link>
             </li>
           </ul>

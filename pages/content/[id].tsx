@@ -1,7 +1,6 @@
 import React from 'react';
 import { useRouter } from 'next/router';
 import { GetServerSideProps } from 'next';
-import { fetchContentById } from '../../lib/content';
 
 const ContentPage = ({ content }) => {
   const router = useRouter();
@@ -32,11 +31,11 @@ const ContentPage = ({ content }) => {
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const { id } = context.params;
-  const content = await fetchContentById(id);
+//  const content = await fetchContentById(id);
 
   return {
     props: {
-      content,
+  //    content,
     },
   };
 };

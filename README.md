@@ -1,8 +1,8 @@
-# OnlyFans App
+# shire App
 
 ## Description
 
-The OnlyFans app is a content creation and sharing platform that allows users to create, upload, and share various types of content, such as photos, videos, and text posts. The app provides tools for content creators to edit and enhance their content before sharing, and enables users to share their content with their subscribers. The app also supports subscription-based payments, allowing content creators to set their own subscription prices and offer different subscription tiers with varying levels of access to content. The app integrates with Stripe for secure payment processing.
+The shire app is a content creation and sharing platform that allows users to create, upload, and share various types of content, such as photos, videos, and text posts. The app provides tools for content creators to edit and enhance their content before sharing, and enables users to share their content with their subscribers. The app also supports subscription-based payments, allowing content creators to set their own subscription prices and offer different subscription tiers with varying levels of access to content. The app integrates with Stripe for secure payment processing.
 
 ## Features
 
@@ -43,8 +43,8 @@ To set up the development environment and run the app locally, follow these step
 
 1. Clone the repository:
    ```
-   git clone https://github.com/your-username/onlyfans-app.git
-   cd onlyfans-app
+   git clone https://github.com/your-username/shire-app.git
+   cd shire-app
    ```
 
 2. Install dependencies:
@@ -68,7 +68,7 @@ To set up the development environment and run the app locally, follow these step
 
 ## Contributing
 
-We welcome contributions to the OnlyFans app! To contribute, follow these steps:
+We welcome contributions to the shire app! To contribute, follow these steps:
 
 1. Fork the repository.
 2. Create a new branch for your feature or bugfix:

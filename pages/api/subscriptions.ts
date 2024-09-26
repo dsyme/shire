@@ -4,7 +4,7 @@ import Stripe from 'stripe';
 
 const prisma = new PrismaClient();
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
-  apiVersion: '2020-08-27',
+  apiVersion: '2024-06-20',
 });
 
 const subscribe = async (req: NextApiRequest, res: NextApiResponse) => {
