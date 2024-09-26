@@ -1,0 +1,64 @@
+model User {
+  id       Int      @id @default(autoincrement())
+  username String   @unique
+  email    String   @unique
+  password String
+  content  Content[]
+  subscriptions Subscription[]
+}
+
+model Content {
+  id       Int      @id @default(autoincrement())
+  title    String
+  type     String
+  url      String?
+  text     String?
+  userId   Int
+  user     User     @relation(fields: [userId], references: [id])
+  performanceMetrics PerformanceMetrics[]
+  audienceDemographics AudienceDemographics[]
+}
+
+model Subscription {
+  id        Int      @id @default(autoincrement())
+  userId    Int
+  creatorId Int
+  tierId    Int
+  user      User     @relation(fields: [userId], references: [id])
+  creator   User     @relation(fields: [creatorId], references: [id])
+  tier      SubscriptionTier @relation(fields: [tierId], references: [id])
+}
+
+model SubscriptionTier {
+  id        Int      @id @default(autoincrement())
+  creatorId Int
+  name      String
+  price     Float
+  creator   User     @relation(fields: [creatorId], references: [id])
+  subscriptions Subscription[]
+}
+
+model Earnings {
+  id        Int      @id @default(autoincrement())
+  creatorId Int
+  amount    Float
+  creator   User     @relation(fields: [creatorId], references: [id])
+}
+
+model PerformanceMetrics {
+  id        Int      @id @default(autoincrement())
+  contentId Int
+  views     Int
+  likes     Int
+  comments  Int
+  content   Content  @relation(fields: [contentId], references: [id])
+}
+
+model AudienceDemographics {
+  id        Int      @id @default(autoincrement())
+  contentId Int
+  age       Int
+  gender    String
+  location  String
+  content   Content  @relation(fields: [contentId], references: [id])
+}
