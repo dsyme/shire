@@ -1,8 +1,8 @@
-# Shire App
+# OnlyFans App
 
 ## Description
 
-The Shire app is a content creation and sharing platform that allows users to create, upload, and share various types of content, such as photos, videos, and text posts. The app provides tools for content creators to edit and enhance their content before sharing, and enables users to share their content with their subscribers. The app also supports subscription-based payments, allowing content creators to set their own subscription prices and offer different subscription tiers with varying levels of access to content. The app integrates with Stripe for secure payment processing.
+The OnlyFans app is a content creation and sharing platform that allows users to create, upload, and share various types of content, such as photos, videos, and text posts. The app provides tools for content creators to edit and enhance their content before sharing, and enables users to share their content with their subscribers. The app also supports subscription-based payments, allowing content creators to set their own subscription prices and offer different subscription tiers with varying levels of access to content. The app integrates with Stripe for secure payment processing.
 
 ## Features
 
@@ -43,8 +43,8 @@ To set up the development environment and run the app locally, follow these step
 
 1. Clone the repository:
    ```
-   git clone https://github.com/your-username/shire-app.git
-   cd shire-app
+   git clone https://github.com/your-username/onlyfans-app.git
+   cd onlyfans-app
    ```
 
 2. Install dependencies:
