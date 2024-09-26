@@ -7,7 +7,7 @@ import SubscriptionManager from '../components/SubscriptionManager';
 
 const Dashboard = () => {
   return (
-    <div>
+    <div style={{ fontFamily: 'Lato, sans-serif', color: '#333' }}>
       <Header />
       <main>
         <section>
@@ -26,9 +26,9 @@ const Dashboard = () => {
       <aside>
         <nav>
           <ul>
-            <li><a href="/profile">Profile</a></li>
-            <li><a href="/settings">Settings</a></li>
-            <li><a href="/subscriptions">Subscription Management</a></li>
+            <li><a href="/profile" style={{ textDecoration: 'none', color: '#333', transition: 'color 0.3s' }} onMouseOver={(e) => e.currentTarget.style.color = '#555'} onMouseOut={(e) => e.currentTarget.style.color = '#333'}>Profile</a></li>
+            <li><a href="/settings" style={{ textDecoration: 'none', color: '#333', transition: 'color 0.3s' }} onMouseOver={(e) => e.currentTarget.style.color = '#555'} onMouseOut={(e) => e.currentTarget.style.color = '#333'}>Settings</a></li>
+            <li><a href="/subscriptions" style={{ textDecoration: 'none', color: '#333', transition: 'color 0.3s' }} onMouseOver={(e) => e.currentTarget.style.color = '#555'} onMouseOut={(e) => e.currentTarget.style.color = '#333'}>Subscription Management</a></li>
           </ul>
         </nav>
       </aside>

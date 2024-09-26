@@ -7,7 +7,13 @@ const LoginPage = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    // Add login logic here
+    if (email === 'john@john.com') {
+      localStorage.setItem('isLoggedIn', 'true');
+      localStorage.setItem('isContentCreator', 'true');
+      alert('Login successful! You are logged in as a content creator.');
+    } else {
+      alert('Invalid username or password.');
+    }
   };
 
   return (

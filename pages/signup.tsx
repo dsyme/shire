@@ -8,7 +8,11 @@ const SignUpPage = () => {
 
   const handleSignUp = (e) => {
     e.preventDefault();
-    // Add sign-up logic here
+    const newUser = { username, email, password };
+    const existingUsers = JSON.parse(localStorage.getItem('users')) || [];
+    existingUsers.push(newUser);
+    localStorage.setItem('users', JSON.stringify(existingUsers));
+    alert('Sign up successful! You can now log in.');
   };
 
   return (

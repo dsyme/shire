@@ -65,7 +65,7 @@ const SubscriptionManager = () => {
   };
 
   return (
-    <div>
+    <div style={{ fontFamily: 'Lato, sans-serif', color: '#333' }}>
       <h2>Subscription Manager</h2>
       <div>
         <h3>Active Subscriptions</h3>
@@ -73,8 +73,22 @@ const SubscriptionManager = () => {
           {subscriptions.map((subscription) => (
             <li key={subscription.id}>
               {subscription.creatorName} - {subscription.tierName}
-              <button onClick={() => handleRenewSubscription(subscription.id)}>Renew</button>
-              <button onClick={() => handleCancelSubscription(subscription.id)}>Cancel</button>
+              <button
+                onClick={() => handleRenewSubscription(subscription.id)}
+                style={{ padding: '5px 10px', margin: '5px', borderRadius: '4px', border: 'none', backgroundColor: '#333', color: '#fff', cursor: 'pointer', transition: 'background-color 0.3s' }}
+                onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#555'}
+                onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#333'}
+              >
+                Renew
+              </button>
+              <button
+                onClick={() => handleCancelSubscription(subscription.id)}
+                style={{ padding: '5px 10px', margin: '5px', borderRadius: '4px', border: 'none', backgroundColor: '#333', color: '#fff', cursor: 'pointer', transition: 'background-color 0.3s' }}
+                onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#555'}
+                onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#333'}
+              >
+                Cancel
+              </button>
             </li>
           ))}
         </ul>
@@ -91,7 +105,14 @@ const SubscriptionManager = () => {
         {selectedTier && (
           <div>
             <h4>Selected Tier: {selectedTier.name}</h4>
-            <button onClick={handlePayment}>Subscribe</button>
+            <button
+              onClick={handlePayment}
+              style={{ padding: '5px 10px', margin: '5px', borderRadius: '4px', border: 'none', backgroundColor: '#333', color: '#fff', cursor: 'pointer', transition: 'background-color 0.3s' }}
+              onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#555'}
+              onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#333'}
+            >
+              Subscribe
+            </button>
           </div>
         )}
       </div>
