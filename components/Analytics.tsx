@@ -3,7 +3,7 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, BarChart
 
 const Analytics = ({ performanceMetrics, audienceDemographics, earningsReports }) => {
   return (
-    <div>
+    <div style={{ fontFamily: 'Lato, sans-serif', color: '#333' }}>
       <h2>Analytics and Insights</h2>
       <section>
         <h3>Performance Metrics</h3>

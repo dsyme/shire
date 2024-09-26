@@ -3,19 +3,23 @@ import Link from 'next/link';
 
 const HomePage = () => {
   return (
-    <div>
+    <div style={{ fontFamily: 'Lato, sans-serif', color: '#333' }}>
       <header>
         <h1>Welcome to shire</h1>
         <nav>
           <ul>
             <li>
               <Link href="/signup">
-                Sign Up
+                <a style={{ textDecoration: 'none', color: '#333', transition: 'color 0.3s' }} onMouseOver={(e) => e.currentTarget.style.color = '#555'} onMouseOut={(e) => e.currentTarget.style.color = '#333'}>
+                  Sign Up
+                </a>
               </Link>
             </li>
             <li>
               <Link href="/login">
-                Log In
+                <a style={{ textDecoration: 'none', color: '#333', transition: 'color 0.3s' }} onMouseOver={(e) => e.currentTarget.style.color = '#555'} onMouseOut={(e) => e.currentTarget.style.color = '#333'}>
+                  Log In
+                </a>
               </Link>
             </li>
           </ul>
