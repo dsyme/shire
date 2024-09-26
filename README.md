@@ -1,4 +1,4 @@
-# shire App
+# (DUMMY) shire App
 
 ## Description
 
